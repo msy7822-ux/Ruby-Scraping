@@ -9,7 +9,7 @@ open('https://www.geospatial.jp/ckan/dataset/db74071f-cd0a-406d-ba3d-57c7a25d992
 end
 
 
-# 避難所の座標データの配列（座標用）
+# 避難所のデータの配列（座標用）
 safe_place_array = []
 
 File.foreach("43_geojson.txt"){|line|
@@ -55,7 +55,7 @@ File.open 'y_data.txt', "a" do |line|
   end
 end
 
-# 避難所の座標データの配列（施設名用）
+# 避難所のデータの配列（施設名用）
 safe_place_array = []
 
 File.foreach("43_geojson.txt"){|line|
